@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td style="width: 50%;">
+                <table class="main">
+                    <th>
+                        <p style="padding-left: 125px;">Details</p>
+                    </th>
+                    <tr>
+                        <td>What is your Name:</td>
+                        <td colspan="2">
+                            <input style="display: inline;" type="text" name="first_name" id="name" value="Athreyan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Quote that discribes you:
+                        </td>
+                        <td colspan="2">
+                            <!-- <input style="width: 100%;" type="text" name="quote" id="quote"> -->
+                            <textarea name="quote" id="quote" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Contact Number:
+                        </td>
+                        <td>
+                            <input type="tel" name="ph_number" id="ph_number" pattern="[0-9]{2}-[0-9]{10}"
+                                value="00-000000000">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Twitter
+                        </td>
+                        <td>
+                            <input type="url" name="twitter" id="twitter">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Github
+                        </td>
+                        <td>
+                            <input type="url" name="github" id="github">
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>
+                            <p><label for="file" style="cursor: pointer; padding-bottom: 10px;">Upload Image</label></p>
+                        </td>
+                        <td colspan="2">
+                            <p><input type="file" name="image" id="image" accept="image/*" onchange="loadfile(event)"
+                                    style="color: aliceblue; padding-top: 10px;"></p>
+
+                            <p><img id="output" width="200"> </p>
+                        </td>
+                    </tr>
+                   
+                        <td colspan="2">
+                            <button onclick="myFunction()">Process</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td colspan="2" style="width: 50%;" align="center">
+                <div>
+
+                </div>
+                <div class="card">
+                    <img id="coverPic" src="img.png" alt="Dev" style="width: 100%;">
+                    <div class="data">
+                    <h1 class="name1" id="nameoncard">Athreyan</h1>
+                    <p class="title" id="title">
+                        "Serch Happiness inside you!!"
+                    </p>
+                    <p id="number">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        00-000000000
+                    </p>
+                    <!-- <p> <button> <i class="fa fa-twitter" aria-hidden="true"></i></button> <button><i class="fa fa-github" aria-hidden="true"></button></i></p> -->
+                    <a href="https://twitter.com" class="fa fa-twitter fa-2x"></a>
+                    <a href="https://github.com" class="fa fa-github fa-2x"></a>
+                    <a href="https://discord.com" class="iconify" data-icon="simple-icons:discord" data-inline="false"></a>
+                </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+<!-- <div class="card">
+    <p><img id="output" style="width: 100%;"> </p>
+    <h1 id="id_name"></h1>
+</div> -->
+
+</html>
